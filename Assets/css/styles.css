@@ -39,3 +39,7 @@ button{
   background-color: darkturquoise;
   cursor: pointer;
 }
+
+.positive{
+  color: green;
+}
