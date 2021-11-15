@@ -1,25 +1,20 @@
-let counter =document.querySelector(".counter");
-let count= 0;
+const counter = document.getElementById('counter');
+const incrementBtn = document.getElementById('increment');
+const resetBtn = document.getElementById('reset');
+const decrementBtn = document.getElementById('decrement');
 
-function changeCounter(button){
-  if(button ==plus){
-     count +=1;
-  }else if (button==minus){
-    count -=1;
-  }else if (button == reset) {
-    count = 0
-  }
+let counterValue = 0;
+incrementBtn.addEventListener("click", function (event){
+  counterValue += 1;
+  counter.innerHTML = counterValue;
+});
 
-if (count >0){
-  counter.style.color ="green"
-}
+decrementBtn.addEventListener("click", function (event){
+  counterValue -= 1;
+  counter.innerHTML = counterValue;
+});
 
-if (count <0){
-  counter.style.color ="red"
-}
-if (count ==0){
-  counter.style.color ="yellow"
-}
-
-  counter.innerHTML = count;
-}
+resetBtn.addEventListener("click", function (event){
+  counterValue = 0;
+  counter.innerHTML = counterValue;
+});
