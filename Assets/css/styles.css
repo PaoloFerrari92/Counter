@@ -5,7 +5,7 @@
   font-family:'Roboto', sans-serif;
 }
 body{
-  background-image: url(/Users/paoloferrari/Documents/PaoloFerrari/Counter/Assets/img/pexels-rostislav-uzunov-5011647.jpg);
+  background-image: url(Assets/img/pexels-rostislav-uzunov-5011647.jpg);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -38,8 +38,4 @@ button{
   font-size: 30px;
   background-color: darkturquoise;
   cursor: pointer;
-}
-
-.positive{
-  color: green;
 }
